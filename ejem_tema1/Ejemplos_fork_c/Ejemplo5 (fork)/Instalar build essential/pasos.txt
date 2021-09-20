@@ -1,0 +1,5 @@
+sudo apt install --simulate $(dpkg -l | egrep '(libc|locales|nscd).* 2.31-0ubuntu9.3 ' | cut -d' ' -f3 | paste -sd ' ' | sed -r 's/( |$)/=2.31-0ubuntu9.2 /g')
+
+sudo apt install $(dpkg -l | egrep '(libc|locales|nscd).* 2.31-0ubuntu9.3 ' | cut -d' ' -f3 | paste -sd ' ' | sed -r 's/( |$)/=2.31-0ubuntu9.2 /g')
+
+apt install build-essential
