@@ -1,0 +1,9 @@
+#Para probar el ejemplo de manera automatizada, hay que ejecutar el builds.xml utiliando ant.
+
+#Lo automatiza todo. Crea los directorios, lo compila y empaqueta.
+ant todo
+
+
+
+#Para ejecutar el jar
+java -jar jar/transferencias.jar

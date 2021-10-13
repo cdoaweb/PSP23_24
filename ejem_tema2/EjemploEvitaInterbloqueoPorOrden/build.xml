@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+
+<project name="ProyectoTransferencia" default="todo">
+     
+       <target name="crear">
+               <mkdir dir="class" />
+               <mkdir dir="jar" />
+       </target>
+       <target name="compilar" depends="crear">
+               <javac srcdir="src" destdir="class" />
+       </target>
+       <target name="empaquetar" depends="compilar">
+               <jar destfile="jar/transferencias.jar" basedir="class" >
+              	 <manifest>
+        		<attribute name="Main-Class" value="evitainterpororden.TransferenciaSinBloqueo" />
+    		</manifest>
+               </jar>
+       </target>
+       <target name="todo" depends="empaquetar" />
+      
+</project>
+
+
+
