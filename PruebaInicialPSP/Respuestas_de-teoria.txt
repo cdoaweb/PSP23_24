@@ -1,0 +1,72 @@
+3:
+Monoprogramación implica ejecutar un solo programa a la vez, cargando y ejecutando uno antes de comenzar otro. Es simple pero no utiliza eficientemente la CPU y es adecuado para sistemas con recursos limitados.
+Multiprogramación permite ejecutar múltiples programas simultáneamente, compartiendo la CPU. El sistema operativo administra la conmutación entre programas para lograr esto. Es esencial para sistemas modernos y aplicaciones multitarea. Proporciona una mayor eficiencia y capacidad de respuesta.
+
+4:
+Unidad Central de Procesamiento (CPU):
+•
+La CPU es el corazón de la computadora y realiza la mayoría de las operaciones de procesamiento. Está compuesta por la Unidad de Control y la Unidad de Aritmética y Lógica.
+2.
+Memoria Principal:
+•
+La memoria principal almacena tanto los programas como los datos que se utilizan durante la ejecución. En la arquitectura de Von Neumann, los programas y los datos se almacenan en la misma memoria y se accede a través de direcciones de memoria.
+3.
+Unidad de Control:
+•
+La Unidad de Control es responsable de la ejecución secuencial de las instrucciones del programa. Decodifica las instrucciones, controla la secuencia de ejecución y coordina la transferencia de datos entre la memoria y la Unidad de Aritmética y Lógica.
+4.
+Unidad de Aritmética y Lógica (ALU):
+•
+La ALU realiza las operaciones aritméticas y lógicas en los datos, como sumas, restas, multiplicaciones, comparaciones, etc. Es la parte de la CPU que realiza los cálculos y toma decisiones.
+5.
+Bus de Datos y Bus de Direcciones:
+•
+El Bus de Datos es un canal de comunicación que transporta los datos entre la CPU y la memoria, mientras que el Bus de Direcciones se utiliza para especificar la ubicación de memoria a la que se accede. Estos buses permiten la transferencia de información entre la CPU y la memoria.
+6.
+Registro de Instrucción (IR):
+•
+El Registro de Instrucción almacena la instrucción actual que se está ejecutando. La Unidad de Control decodifica esta instrucción para determinar la operación que debe realizarse.
+7.
+Registro de Programa (PC):
+•
+El Registro de Programa almacena la dirección de memoria de la siguiente instrucción a ejecutar. Después de ejecutar una instrucción, el valor en el PC se incrementa para apuntar a la siguiente instrucción en secuencia.
+
+5:
+La Unidad de Control (UC) y la Unidad Aritmético-Lógica (ALU) son dos componentes esenciales de una CPU, pero tienen funciones muy diferentes. La UC se encarga de controlar y coordinar las operaciones de la CPU, mientras que la ALU se encarga de realizar operaciones matemáticas y lógicas en los datos. Ambas unidades trabajan juntas para ejecutar instrucciones de programas y llevar a cabo tareas de procesamiento de datos en una computadora.
+
+
+6:
+El kernel de Linux es el núcleo del sistema operativo y desempeña un papel fundamental en la gestión de recursos, la ejecución de programas, la administración de dispositivos y muchas otras funciones esenciales para el funcionamiento de una computadora que ejecuta Linux. Es la parte central del sistema operativo que actúa como intermediario entre el hardware y el software de usuario.
+Algunas de sus principales funciones son:
+1.
+Gestión de recursos del hardware: El kernel de Linux administra y controla los recursos de hardware del sistema, incluyendo la CPU, la memoria, los dispositivos de entrada/salida, el almacenamiento y otros componentes. Asigna recursos a los programas en ejecución y garantiza que se utilicen de manera eficiente.
+2.
+Gestión de procesos: El kernel es responsable de administrar los procesos o programas en ejecución. Esto incluye la creación, programación, suspensión y terminación de procesos. El kernel también administra la memoria y el espacio de direcciones virtuales para cada proceso.
+3.
+Sistema de archivos: El kernel proporciona un sistema de archivos que permite la organización y el acceso a datos y programas en el almacenamiento de la computadora. Gestiona la lectura y escritura de archivos, así como la administración de directorios.
+4.
+Comunicación entre procesos: El kernel facilita la comunicación entre diferentes procesos en el sistema. Esto puede ser a través de mecanismos como tuberías (pipes), colas de mensajes, memoria compartida y señales.
+5.
+Control de dispositivos: El kernel controla y administra los dispositivos de hardware conectados al sistema, como discos duros, tarjetas de red, impresoras, teclados, mouse y otros periféricos. Proporciona controladores de dispositivos que permiten a los programas de usuario interactuar con estos dispositivos.
+6.
+Gestión de memoria: El kernel se encarga de asignar y liberar memoria física y virtual para los procesos en ejecución. También supervisa el uso de la memoria para evitar errores de acceso y garantizar un uso eficiente de los recursos.
+7.
+Gestión de interrupciones: El kernel maneja interrupciones generadas por hardware y software. Las interrupciones son señales que indican eventos importantes, como solicitudes de hardware, temporizadores y errores. El kernel debe responder adecuadamente a estas interrupciones para garantizar la estabilidad del sistema.
+8.
+Seguridad y permisos: El kernel implementa un sistema de control de acceso y permisos para proteger los recursos del sistema y garantizar que los usuarios y procesos solo tengan acceso a los recursos para los que tienen autorización.
+9.
+Programación de tareas y temporizadores: El kernel es responsable de programar la ejecución de tareas y gestionar temporizadores. Esto es fundamental para la multitarea y la ejecución de procesos en momentos específicos.
+10.
+Gestión de red: El kernel de Linux incluye controladores de red y protocolos de comunicación que permiten la conectividad de red y el acceso a Internet.
+
+7:
+En programación, una estructura de pila es una colección de datos organizados de manera que el último elemento en ingresar es el primero en salir (LIFO, por sus siglas en inglés, Last-In-First-Out). Esto significa que el elemento más reciente que se agrega a la pila es el primero en ser eliminado o accedido. Las operaciones básicas en una estructura de pila son:
+1.
+Push (Empujar): Agregar un elemento a la parte superior de la pila.
+2.
+Pop (Desempujar): Eliminar el elemento superior de la pila.
+3.
+Top (Cima): Obtener el elemento superior de la pila sin eliminarlo.
+4.
+Empty (Vacía): Verificar si la pila está vacía.
+Una estructura de pila se utiliza comúnmente en situaciones en las que se necesita realizar un seguimiento de elementos en un orden específico de llegada y salida. Algunos ejemplos de uso de pilas incluyen la implementación de funciones recursivas, la reversión de una cadena, la evaluación de expresiones matemáticas en notación polaca inversa (postfija) y la administración de historiales de navegación en un navegador web.
