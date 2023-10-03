@@ -24,3 +24,4 @@ int main(int argc, char** argv) {
 	}
 	return 0;
 }
+/*Este programa crea un proceso hijo utilizando fork(). El proceso padre y el proceso hijo imprimen mensajes diferentes en la consola. Luego, el programa entra en un bucle que solicita al usuario ingresar números hasta que se ingrese el número 0, momento en el que el programa se detiene y finaliza.*/

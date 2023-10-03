@@ -12,3 +12,4 @@ int main()
     printf("Hello world!\n");
     return 0;
 }
+/* La función fork() crea un nuevo proceso hijo que es una copia exacta del proceso padre. Y la llamada a fork(). Ambos imprimirán "Hello world!\n" en la consola.*/

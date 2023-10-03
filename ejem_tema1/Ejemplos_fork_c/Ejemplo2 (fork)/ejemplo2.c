@@ -9,3 +9,5 @@ int main()
     printf("hello\n");
     return 0;
 }
+
+/*Este bucle fork() crea una estructura de árbol de procesos donde cada proceso padre se divide en dos procesos hijos en cada iteración. Luego, estos procesos hijos también se dividen en dos procesos hijos en la siguiente iteración, y así sucesivamente. Cada proceso imprimirá "hello" en la consola.*/
