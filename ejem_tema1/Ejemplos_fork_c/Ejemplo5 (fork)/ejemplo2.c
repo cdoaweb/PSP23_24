@@ -24,4 +24,20 @@ int main(int argc, char** argv) {
 	}
 	return 0;
 }
-/*Este programa crea un proceso hijo utilizando fork(). El proceso padre y el proceso hijo imprimen mensajes diferentes en la consola. Luego, el programa entra en un bucle que solicita al usuario ingresar números hasta que se ingrese el número 0, momento en el que el programa se detiene y finaliza.*/
+
+/*
+La función fork() para crear un proceso hijo y luego solicita al usuario que ingrese un número hasta que ingresen 0 para salir del bucle.
+1.
+La función main():
+Declara una variable pid_t llamada pid que se utilizará para almacenar el valor de retorno de fork(). pid_t es un tipo de datos específico de UNIX/Linux utilizado para representar identificadores de proceso (PIDs).
+Llama a fork() para crear un nuevo proceso. Después de la bifurcación, el valor de `pid` será 0 en el proceso hijo y será el PID del proceso hijo en el proceso padre.
+Declara una variable op inicializada en 1, que se usará para solicitar al usuario que ingrese un número en un bucle.
+Entra en un bucle while que se ejecutará hasta que el usuario ingrese el número 0 (op sea igual a 0).
+Dentro del bucle, se utiliza una instrucción switch para determinar qué imprimir en función del valor de pid.
+Si pid es -1, indica un error y muestra "Error".
+Si pid es 0, significa que estamos en el proceso hijo y muestra "Proceso hijo".
+Si pid es diferente de 0, significa que estamos en el proceso padre y muestra "Proceso padre".
+Luego, se solicita al usuario que ingrese un número con scanf() y se almacena en op. El bucle continuará hasta que op sea igual a 0.
+2.
+Al final, el programa termina y devuelve 0.
+*/

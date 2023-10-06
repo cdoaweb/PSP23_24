@@ -16,4 +16,19 @@ int main()
     forkexample();
     return 0;
 }
-/*Este programa crea un proceso hijo utilizando fork(), y ambos el proceso padre y el proceso hijo operan en su propia copia de la variable X. Por lo tanto, el proceso hijo incrementa x a 2 y el proceso padre lo decrementa a 0, y estos valores se muestran en la consola como "Child has x = 2" y "Parent has x = 0", respectivamente. Esto demuestra cómo las variables tienen su propio espacio de memoria en procesos separados y cómo los cambios en una variable en un proceso no afectan a la variable en el otro proceso.*/
+
+/*
+Fork() crea un proceso hijo que es una copia exacta del proceso padre, incluyendo las variables. Sin embargo, los procesos hijo y padre tienen sus espacios de memoria separados, por lo que las modificaciones de variables en uno de los procesos no afectan a la otra.
+1.
+Se define la función forkexample():
+Se declara una variable x con el valor inicial 1.
+Luego, se llama a fork() para crear un nuevo proceso. Tanto el proceso hijo como el proceso padre tienen su propia copia de x.
+Si el valor de retorno de fork() es 0, significa que estamos en el proceso hijo. En este caso, incrementamos x en 1 y luego imprimimos el valor actualizado de x en el proceso hijo.
+Si el valor de retorno de fork() es diferente de 0, significa que estamos en el proceso padre. En este caso, decrementamos x en 1 y luego imprimimos el valor actualizado de x en el proceso padre.
+2.
+En la función main():
+Se llama a forkexample(), que es donde ocurre la bifurcación del proceso.
+La salida del programa dependerá del orden en que se ejecuten los procesos, pero debido a que x es independiente en cada proceso, el resultado será:
+En el proceso hijo, x se incrementa a 2 y se imprime como "Child has x = 2".
+En el proceso padre, x se decrementa a 0 y se imprime como "Parent has x = 0".
+*/
