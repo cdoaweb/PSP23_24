@@ -1,0 +1,11 @@
+ El volumen de la unidad C es Windows
+ El n£mero de serie del volumen es: 9823-74A4
+
+ Directorio de C:\Users\Carlos Daniel\Documents\OneDrive\Documentos\Mis cursos\DAM\Segundo\Programaci¢n de servicios y procesos\Pr cticas\PSP23_24\EjecucionSimpleRuntime\src
+
+11/10/2023  09:26    <DIR>          .
+11/10/2023  09:01    <DIR>          ..
+11/10/2023  08:46               822 EjecucionSimpleRuntime.java
+11/10/2023  09:26                 0 fichero.txt
+               2 archivos            822 bytes
+               2 dirs  438.542.163.968 bytes libres
