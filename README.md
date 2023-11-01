@@ -1,5 +1,5 @@
 
-#ejemplos de PSP.
+#Mis ejercicios resueltos de PSP.
 
 #tema1....
 #.....ejemplos con el comando fork
